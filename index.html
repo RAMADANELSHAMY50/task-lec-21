@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DoToList</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header class=" mt-5 ">
+            <h1 class="d-flex justify-content-center gap-3"><i
+                    class="bi bi-check2-circle bg-primary rounded-2"></i>TaskflowPro</h1>
+        </header>
+
+        <section>
+            <div class="head_todolist d-flex justify-content-between mt-5 mb-5">
+                <div class="title">
+                    <h2 class="text-capitalize">today's focus</h2>
+                    <p>Stay productive and organized in your focused
+                        workspace</p>
+                </div>
+                <div class="btn border-0">
+                    <button
+                        class="add-task border-0 rounded-2 bg-primary text-white text-capitalize"><i
+                            class="bi bi-plus"></i>add task</button>
+
+                </div>
+            </div>
+        </section>
+
+<!-- create section  -->
+        <section>
+            <div class="part_create rounded-2 mb-5">
+                <h2 class="text-white mb-4"><i
+                        class="bi bi-pencil-square rounded-2"></i> Quick Add
+                    Task</h2>
+                <div class="create_task d-flex align-items-end gap-3">
+
+                    <div class="d-flex flex-column gap-1 flex-fill">
+                        <label class="text-secondary text-capitalize">task
+                            name</label>
+                        <input class="p-2 border-0 rounded-1" type="text"
+                            placeholder="what needs to be done?" id="title">
+                    </div>
+
+                    <div class="d-flex flex-column gap-1 flex-fill">
+                        <label class="text-secondary text-capitalize">task
+                            description</label>
+                        <input class="p-2 border-0 rounded-1" type="text"
+                            placeholder="add more details" id="desc">
+                    </div>
+
+                    <div class="flex-fill">
+                        <button
+                            class="w-100 h-100 text-white text-capitalize border-0 rounded-2 bg-primary" id="AddTask">
+                            create task
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <div class="btn d-flex  gap-2 mb-2 border-0">
+                <button
+                    class="btn-dis border rounded-3 px-3 py-1 bg-white text-capitalize " onclick="hh(this)" id="Completed">display
+                    completed</button>
+                <button
+                    class="btn-dis border rounded-3 px-3 py-1 bg-white text-capitalize " onclick="hh(this)" id="Waiting">display
+                    waiting</button>
+                <button
+                    class="btn-dis border rounded-3 px-3 py-1 bg-white text-capitalize " onclick="hh(this)" id="All">display
+                    all</button>
+                <button
+                    class="btn-dis border rounded-3 px-3 py-1 bg-white text-capitalize " id="deleteAll" onclick="hh(this)">delete
+                    all</button>
+                    
+            </div>
+        </main>
+
+        <section>
+            <table class="w-100 text-center">
+                <thead>
+                    <tr class=" ">
+                        <th>id</th>
+                        <th>task name</th>
+                        <th>task detail</th>
+                        <th>status</th>
+                        <th>due date</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"></script>
+
+            <script src="./js/script.js"></script>
+    </body>
+</html>
